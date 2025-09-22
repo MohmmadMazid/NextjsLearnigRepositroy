@@ -3,7 +3,7 @@
 import { Butterfly_Kids } from "next/font/google";
 import React, { useState } from "react";
 
-const EventFunction = () => {
+const EventFunctionAndState = () => {
   const [count, setCount] = useState(0);
   const handleClick = () => {
     alert("hello Geeeee ");
@@ -29,4 +29,4 @@ const EventFunction = () => {
   );
 };
 
-export default EventFunction;
+export default EventFunctionAndState;

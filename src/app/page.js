@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import EventFunction from "@/components/EventFunction";
+import EventFunctionAndState from "@/components/EventFunctionAndState";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1>My First Next App</h1>
         <h1>My First Next App</h1>
-        <EventFunction />
+        <EventFunctionAndState />
       </main>
     </div>
   );
