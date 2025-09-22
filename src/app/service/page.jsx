@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-const Contact = () => {
+const Service = () => {
   return (
     <div>
-      <h3>Contact Page</h3>
+      <h1>My Sevices</h1>
       <Link href="/home">Back To Home Page</Link>
     </div>
   );
 };
 
-export default Contact;
+export default Service;
