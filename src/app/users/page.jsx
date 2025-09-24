@@ -17,6 +17,10 @@ const UsersData = () => {
   }, []);
 
   // i have used the useEffect hook for the data fetching on the time mounting  of the component on the browsers
+
+  const handleClick = () => {
+    alert("handling event at the client component");
+  };
   return (
     <div>
       <div>
@@ -27,6 +31,7 @@ const UsersData = () => {
           return (
             <li key={el.id}>
               <h3>{el.name}</h3>
+              <button onClick={handleClick}>click me</button>
             </li>
           );
         })}
