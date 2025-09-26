@@ -2,6 +2,8 @@
 // this is the client side data fetching that is why we have use "use client " directives
 
 import React, { useEffect, useState } from "react";
+import moduleStyle from "./page.module.css";
+// i have imported the module css for the styling purpose
 
 const UsersData = () => {
   let [users, setUsers] = useState([]);
@@ -24,12 +26,14 @@ const UsersData = () => {
   return (
     <div>
       <div>
-        <h1>Fetching Users Data In The Client Side Component</h1>
+        <h1 className={moduleStyle.heading}>
+          Fetching Users Data In The Client Side Component
+        </h1>
       </div>
       <ol>
         {users.map((el) => {
           return (
-            <li key={el.id}>
+            <li key={el.id} className={moduleStyle.list}>
               <h3>{el.name}</h3>
               <button onClick={handleClick}>click me</button>
             </li>

@@ -1,0 +1,23 @@
+/* 
+    you can also use the moduler css for any parttcualr file or folder
+    and this will only for the particular file and folder
+*/
+
+.heading{
+    color:rgb(27, 26, 26);
+    background-color: lightcyan;
+    text-align:center;
+    padding:10px;   
+    margin:20px;
+    border:2px solid black;
+}
+
+.list{
+    color:cyan;
+    background-color:rgb(92, 35, 92);
+    margin:1rem;
+    padding:1.2rem;
+    text-align: center;
+    border-top-left-radius:2rem;
+    border-bottom-right-radius:2rem;
+}
