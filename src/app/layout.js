@@ -27,6 +27,9 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         ></link> */}
+
+        {/* if we loading the script here it will be loaded to all the web pages that is good practice  */}
+        {/* <script src="/jokesApi.js" async></script>  this will impact the performance of the webpage because it will load the script on evry request and also fro the every route */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
