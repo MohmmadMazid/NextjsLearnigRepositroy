@@ -1,5 +1,5 @@
 "use client";
-const EventsHanldingInServerComponent = () => {
+export const EventsHanldingInServerComponent = () => {
   const handleClickEvent = () => {
     alert("hello ,hanldling event in the server side component");
   };
@@ -9,5 +9,3 @@ const EventsHanldingInServerComponent = () => {
     </div>
   );
 };
-
-export default EventsHanldingInServerComponent;
