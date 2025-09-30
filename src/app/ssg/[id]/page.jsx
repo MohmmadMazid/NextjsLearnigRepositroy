@@ -1,5 +1,4 @@
 import React from "react";
-
 import fetchData from "../fetchdata";
 import Link from "next/link";
 const UserData = async ({ params }) => {
