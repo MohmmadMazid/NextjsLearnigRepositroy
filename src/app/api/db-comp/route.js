@@ -8,10 +8,7 @@ export const GET = async () => {
 
   const empData = await Employee.find();
 
-  return NextResponse.json(
-    { message: "db connected successfully", data: empData },
-    { status: 200 }
-  );
+  return NextResponse.json({ result: empData, success: true }, { status: 200 });
 };
 
 // inserting data into the database using post request but this data is not dynamic data
