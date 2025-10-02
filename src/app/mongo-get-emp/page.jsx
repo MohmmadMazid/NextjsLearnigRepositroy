@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 const getEmpData = async () => {
   let res = await fetch("http://localhost:3000/api/db-comp", {
