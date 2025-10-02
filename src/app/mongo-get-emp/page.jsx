@@ -36,6 +36,10 @@ const MongoGetEmp = async () => {
                   <td>{emp.name}</td>
                   <td>{emp.salary}</td>
                   <td>{emp.department}</td>
+                  <td>{emp._id}</td>
+                  <td>
+                    <Link href={`/mongo-get-emp/${emp._id}`}>update</Link>
+                  </td>
                 </tr>
               );
             })}

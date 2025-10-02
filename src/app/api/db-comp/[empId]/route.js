@@ -14,3 +14,13 @@ export const PUT = async (req, { params }) => {
 
   return NextResponse.json({ result, success: true });
 };
+export const GET = async (req, { params }) => {
+  let empID = params.empId;
+  let id = { _id: empID };
+
+  await mongoose.connect("mongodb://127.0.0.1:27017/company");
+
+  let result = await Employee.findById(id);
+
+  return NextResponse.json({ result, success: true });
+};
