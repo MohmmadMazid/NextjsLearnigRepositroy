@@ -1,10 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 const UpdateEmployeeDetails = () => {
   //   let id = params.empid;
   const params = useParams();
+  const router = useRouter();
   const id = params.empid;
   console.log(id);
 
@@ -52,6 +53,7 @@ const UpdateEmployeeDetails = () => {
       console.log("result is ", result);
       if (result.success) {
         alert("data update successfully");
+        router.push("/mongo-get-emp");
       } else {
         alert("something went wrong ");
       }

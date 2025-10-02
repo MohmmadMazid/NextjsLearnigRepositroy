@@ -1,3 +1,4 @@
+import DeleteEmpRecord from "@/components/DeleteEmpRecord";
 import Link from "next/link";
 import React from "react";
 const getEmpData = async () => {
@@ -27,6 +28,9 @@ const MongoGetEmp = async () => {
               <th>Name</th>
               <th>Salary</th>
               <th>Department</th>
+              <th>Employee Id</th>
+              <th>Update Action</th>
+              <th>Delete Action</th>
             </tr>
           </thead>
           <tbody>
@@ -39,6 +43,9 @@ const MongoGetEmp = async () => {
                   <td>{emp._id}</td>
                   <td>
                     <Link href={`/mongo-get-emp/${emp._id}`}>update</Link>
+                  </td>
+                  <td>
+                    <DeleteEmpRecord id={emp._id} />
                   </td>
                 </tr>
               );
