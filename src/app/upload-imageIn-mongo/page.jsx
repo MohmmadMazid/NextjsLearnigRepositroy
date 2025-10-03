@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const UploadImageInMongo = () => {
+  const router = useRouter();
   const [images, setImages] = useState([]);
 
   const handleInputChange = async (e) => {
@@ -32,6 +34,7 @@ const UploadImageInMongo = () => {
       console.log("result is ", result);
       if (result.success) {
         alert("image uploaded in mongodb is successfully");
+        router.push("/uploadMongo-image-get");
       } else {
         alert("failed to upload image in mongodb");
       }
