@@ -1,4 +1,5 @@
 import React from "react";
+// import { Sarina } from "next/font/google";
 import Image from "next/image";
 import next from "../../../src/next.svg"; // this is the way of importing image from any directory of the project
 // this import iporting  will show the image on ui when the image is not present int the public directory
@@ -28,6 +29,16 @@ const ImageOptimization = () => {
         />
       </div>
       <div>
+        {/* this is for the when image is present in the public folder without importing image  */}
+        <Image
+          src="/cupImage.png"
+          alt="this is the image"
+          width={500}
+          height={500}
+          // placeholder="blur" // not working
+        />
+      </div>
+      <div>
         {/* this is for when you importing image from any directory of the project   */}
         <Image src={next} alt="this is the image" width={500} height={250} />
       </div>
@@ -43,6 +54,8 @@ const ImageOptimization = () => {
           src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
           width={500}
           height={300}
+          // placeholder="blur"
+          // loading="lazy"
         />
       </div>
     </div>

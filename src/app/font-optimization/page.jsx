@@ -1,11 +1,13 @@
 import { Roboto } from "next/font/google";
-
-const roboto = Roboto({
-  weight: "900",
+import { Sarina } from "next/font/google";
+import { Abril_Fatface } from "next/font/google";
+const roboto = Abril_Fatface({
+  weight: "400",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  // style: ["normal", "italic"],  // always remember all the things can and can not be availabe for all the fonts
   display: "swap",
 });
+console.log(process.env.NODE_ENV);
 const FontOptimization = () => {
   return (
     <div>
