@@ -2,7 +2,10 @@ import React from "react";
 import EventsHanldingInServerComponent from "./EventsHanldingInServerComponent";
 import styles from "../custome.module.css";
 import DeletePost from "@/components/DeletePost";
-
+export const metadata = {
+  title: "My Post Page",
+  description: "it is created for the post page",
+};
 // this way you can fetch the data in the server side component without using any hooks or state
 let postsFunction = async () => {
   let response = await fetch("https://jsonplaceholder.typicode.com/posts");
